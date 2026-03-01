@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+
+    <title>GoFetch® Dog™ App</title>
+  </head>
+  <body>
+    <div class="wrapper">
+  <header>
+    <!-- <h1>Find A Dog</h1> -->
+     <h1>GoFetch:</h1>
+     <h1> A Dog App</h1>
+  </header>
+
+  <form id="dogForm">
+    <!--  where user will put breed & temperament  -->
+
+    <label for="breed">Breed Name: </label>
+    <input type="text" id="breed" name="breed" placeholder="what breed are you seeking?">
+
+    <label for="temperament">Temperament:</label>
+    <select name="temperament" id="temperament">
+      <option value="">--select--</option>
+      <option value="Affectionate">Affectionate</option>
+      <option value="Energetic">Energetic</option>
+      <option value="Friendly">Friendly</option>
+      <option value="Intelligent">Intelligent</option>
+      <option value="Loyal">Loyal</option>
+      <option value="Playful">Playful</option>
+      <option value="Protective">Protective</option>
+    </select>
+
+    <button type="submit">SEARCH</button>
+  </form>
+
+  <div id="results"></div>
+</div>
+
+<footer>
+  <p>&copy; 2026 GoFetch® Dog™ App and <a href="https://www.anniecannons.org" target="_blank">AnnieCannons</a>.</p>
+</footer>
+</div>
+    <script src="./js/custom.js"></script>
+  </body>
+</html>

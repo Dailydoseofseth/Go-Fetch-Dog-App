@@ -1,0 +1,131 @@
+html {
+  box-sizing: border-box;
+}
+
+/* Apply border-box to all elements */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom right, #d1f2eb, #0e287c);
+  margin: 0;
+  padding: 0;
+  color: #555;
+  text-align: center;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+#dogForm {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffffcc;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+
+label,
+input,
+select,
+button {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+button {
+  background-color: #0e297c;
+  width: 6rem;
+}
+button:hover {
+  background-color: #f1948a;
+  animation: pulseGlow 0.4s ease-out;
+  box-shadow:
+    0 0 20px #f1948a,
+    0 0 40px #f1948a;
+}
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 5px #f1948a;
+  }
+  50% {
+    box-shadow:
+      0 0 20px #f1948a,
+      0 0 30px #f1948a;
+  }
+  100% {
+    box-shadow: 0 0 10px #f1948a;
+  }
+}
+
+footer {
+  font-weight: bolder;
+}
+footer a {
+  color: #a26a3e;
+}
+footer a:hover {
+  text-decoration: none;
+}
+footer:hover {
+  animation: pulseGlow 0.4s ease-out;
+  box-shadow:
+    0 0 20px #f1948a,
+    0 0 40px #f1948a;
+}
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 5px #f1948a;
+  }
+  50% {
+    box-shadow:
+      0 0 30px #f1948a,
+      0 0 60px #f1948a;
+  }
+  100% {
+    box-shadow: 0 0 10px #f1948a;
+  }
+}
+
+#results {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+  justify-content: center;
+  /*   display: grid;
+  gap: 4rem; */
+}
+
+.dog-card {
+  display: inline-block;
+  width: 280px;
+  padding: 1rem;
+  background: #e6e6e6;
+  border-radius: 2em;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  text-align: left;
+}
+
+.dog-card img {
+  width: 100%;
+  height: 175px;
+  border-bottom: 4px solid #f1948a;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
